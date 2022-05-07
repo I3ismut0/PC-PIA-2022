@@ -3,6 +3,7 @@ import os
 
 
 temp = []
+
 with os.scandir('./') as ficheros:
     for fichero in ficheros:
         temp.append(fichero.name)
