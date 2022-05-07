@@ -1,7 +1,12 @@
 import hashlib
 import os
 
-temp = open("datos.txt",'r').read().split('\n')
+
+temp = []
+with os.scandir('./') as ficheros:
+    for fichero in ficheros:
+        temp.append(fichero.name)
+temp.remove(".git")
 
 def valorhash():
     f = open ('hash.txt','w')
@@ -9,12 +14,9 @@ def valorhash():
         file_obj= open (path,"rb")
         file= file_obj.read()
         Hash = hashlib.sha512(file)
-        #print(Hash)
         Hashed = Hash.hexdigest()
-        #print(Hashed)
         f.write(path+":"+os.linesep+Hashed+ os.linesep)
     print("fin")
     f.close()
 
-#print(temp)
 valorhash()
