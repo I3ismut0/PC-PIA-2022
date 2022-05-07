@@ -7,6 +7,7 @@ with os.scandir('./') as ficheros:
     for fichero in ficheros:
         temp.append(fichero.name)
 temp.remove(".git")
+temp.remove("__pycache__")
 
 def valorhash():
     f = open ('hash.txt','w')
