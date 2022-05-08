@@ -2,12 +2,14 @@
 import argparse
 import logging
 import sphinx
+import sys
 import subprocess
 from hashdoc import valorhash
 from scraping import scraping_url
 from verificacion import email_verf
 from socketscript import socketd
 from verip import ipleef
+from virustotal import total
 def main():
     parser = argparse.ArgumentParser(
         description="suite de seguridad",
@@ -22,6 +24,8 @@ def main():
                         help='Ver direcciones ip disponibles')
     parser.add_argument('-socket',"-so",
                         help='Ver puertos abiertos y cerrados de una direccion ip')
+    parser.add_argument('-virus',"-vi",
+                        help='Checar si un archivo es malicioso')
     if __name__ =="__main__":
         args = parser.parse_args()
 
@@ -35,4 +39,6 @@ def main():
             ipleef()
         elif args.socket:
             socketd(args.socket)
+        elif args.virus:
+            total(args.virus)
 main()
