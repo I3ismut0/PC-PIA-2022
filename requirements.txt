@@ -1,0 +1,6 @@
+beautifulsoup4==4.11.1
+dnspython==2.2.1
+pandas==1.4.2
+requests==2.27.1
+Sphinx==4.5.0
+virustotal_api==1.1.11
