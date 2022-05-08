@@ -1,1 +1,0 @@
-﻿Get-Service |ConvertTo-HTML -Property Name, Status > .\servicios.html
