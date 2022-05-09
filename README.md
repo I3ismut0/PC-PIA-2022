@@ -8,10 +8,11 @@
 - Escaneo de puertos
 - Obtención de claves HASH
 - Revisión de correos
-
+- Análisis de archivos maliciosos 
 ## Requisitos 
-Python 3.10.4 
-Powershell 5.1.0
+- Python 3.10.4 
+
+- Powershell 5.1.0
 ## Instalación
 ### Clonar el repositorio
 
