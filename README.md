@@ -21,6 +21,13 @@ Powershell 5.1.0
 ## Funcionamiento
 
 `[-h] [--hash HASH] [--webscraping WEBSCRAPING] [--verificacion VERIFICACION] [--verip] [--socket SOCKET]`
+##### --hash HASH, -vh HASH
+Obtiene el valor hash de todos los archivos contenidos en la carpeta principal o de una un archivo en especifico.
+###### Ejemplo
+	python .\main.py  --hash “PATH”
+	python .\main.py  -vh “PATH”
+	python .\main.py  -hash o
+	python .\main.py  -vh o
 
 #####   --webscraping WEBSCRAPING, -s WEBSCRAPING
 Obtener correos de una página web
