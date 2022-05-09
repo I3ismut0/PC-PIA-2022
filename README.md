@@ -20,31 +20,31 @@ Powershell 5.1.0
 	Pip install -r requirements.txt 
 ## Funcionamiento
 
-`[-h] [-hash HASH] [-webscraping WEBSCRAPING] [-verificacion VERIFICACION] [-verip] [-socket SOCKET]`
+`[-h] [--hash HASH] [--webscraping WEBSCRAPING] [--verificacion VERIFICACION] [--verip] [--socket SOCKET]`
 
-#####   -webscraping WEBSCRAPING, -s WEBSCRAPING
+#####   --webscraping WEBSCRAPING, -s WEBSCRAPING
 Obtener correos de una página web
 ###### Ejemplo
-	python .\main.py  -webscraping “URL”
+	python .\main.py  --webscraping “URL”
 	python .\main.py  -s “URL”
-##### -verificacion VERIFICACION, -v VERIFICACION
+##### --verificacion VERIFICACION, -v VERIFICACION
  Verifica un correo del archivo previamente generado
 ###### Ejemplo
 	python .\main.py -v “correro electrónico”
-	pyhton .\Main.py -verificacion  “correro electrónico”
-##### -verip, -ip           Ver direcciones ip disponibles
+	pyhton .\Main.py --verificacion  “correro electrónico”
+##### --verip, -ip           Ver direcciones ip disponibles
 ###### Ejemplo
-	pyhton .\Main.py -verip “IP”
+	pyhton .\Main.py --verip “IP”
 	pyhton .\Main.py -ip  “IP”
-##### -socket SOCKET, -so SOCKET
+##### --socket SOCKET, -so SOCKET
 Ver puertos abiertos y cerrados de una dirección ip
 ###### Ejemplo
-	python .\main.py  -socket “IP”
+	python .\main.py  --socket “IP”
 	python .\main.py  -so “IP”
-##### -virus VIRUS, -vi VIRUS
+##### --virus VIRUS, -vi VIRUS
 Checar si un archivo es malicioso
 ###### Ejemplo
-	python .\main.py  -virus “PATH”
+	python .\main.py  --virus “PATH”
 	python .\main.py  -vi “PATH”
 
 ## Observaciones
